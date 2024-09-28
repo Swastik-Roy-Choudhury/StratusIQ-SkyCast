@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swastik Roy Choudhury's Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body background="background2.jpg">
+
+  <video autoplay loop muted playsinline id="background-video">
+    <source src="moving.mp4" type="video/mp4">
+    <source src="moving.webm" type="video/webm">
+    <source src="moving.ogv" type="video/ogg">
+    <source src="moving.mkv" type="video/mkv">
+  </video>
+  
+
+  <div class="container" id="weather-container">
+    <h2>Weathoryx App</h2>
+    <input type="text" id="city" placeholder="Enter city name">
+    <button onclick="searchCity()">Search</i></button>
+  </div>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@bufferhead/nightowl@0.0.14/dist/nightowl.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

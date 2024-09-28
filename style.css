@@ -1,0 +1,142 @@
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('background1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  #background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;  
+  }
+  
+ 
+
+  /* Container Styles */
+  .container {
+    max-width: 90%;
+    min-width: 30%; 
+    max-height: 100vh;
+    padding: 20px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    text-align: center;
+  }
+  
+  
+  /* Heading Styles */
+  h1, h2, label, p {
+    color: #01110c;
+    margin: 8px 0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+                 0 0 20px rgba(255, 255, 255, 0.514),
+                 0 0 30px rgba(255, 255, 255, 0.1);
+}
+  
+  /* Input Styles */
+  input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 20px;
+  }
+  
+  /* Button Styles */
+  button {
+    background: linear-gradient(#5bebcb, #0a5a3b);
+    text-decoration: solid;
+    color: rgb(8, 8, 8);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    width: 100%;
+    max-width: 200px;
+    font-size: 15px;
+  }
+  
+  button:hover {
+    background: #3b3f3e;
+    color: #debff4;
+  }
+
+  body {
+    /* ... existing styles ... */
+    font-size: 16px; /* Base font size for better responsiveness */
+}
+
+.container {
+    /* ... existing styles ... */
+    padding: 10px; /* Reduce padding for smaller screens */
+}
+
+h1, h2, label, p {
+    /* ... existing styles ... */
+    font-size: 2rem; /* Adjust font sizes based on base font size */
+}
+
+@media screen and (max-width: 768px) {
+    /* Styles for smaller screens (e.g., tablets) */
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    h1, h2, label, p {
+        font-size: 1.8rem;
+    }
+
+    input {
+        width: 100%;
+        padding: 5px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Styles for very small screens (e.g., smartphones) */
+    body {
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 2px;
+    }
+
+    h1, h2, label, p {
+        font-size: 1.5rem;
+    }
+
+    input {
+        padding: 3px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+}

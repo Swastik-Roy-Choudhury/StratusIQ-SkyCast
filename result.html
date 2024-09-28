@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Details</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body background="background2.jpg" >
+  <video autoplay loop muted playsinline id="background-video">
+    <source src="moving1.mp4" type="video/mp4">
+    <source src="moving1.webm" type="video/webm">
+    <source src="moving1.ogv" type="video/ogg">
+    <source src="moving1.mkv" type="video/mkv">
+  </video>
+    <div class="container">
+        <h2>MeteoGlow Details</h2>
+        <img src="" id="weather-icon" alt="Weather Icon">
+
+        <div id="temp-div"></div>
+        <div id="weather-info"></div>
+
+        <div class="weather-info">
+            <div class="scroll-container">
+                <div class="scroll-item" id="aqi-container">
+                  <p>AQI: <span id="aqi">N/A</span></p>
+                </div>
+                <div class="scroll-item" id="sunrise-container">
+                  <p>Sunrise: <span id="sunrise"></span></p>
+                </div>
+                <div class="scroll-item" id="sunset-container">
+                  <p>Sunset: <span id="sunset"></span></p>
+                </div>
+                <div class="scroll-item" id="feels-like-container">
+                  <p>Feels Like: <span id="feels_like"></span>°C</p>
+                </div>
+                <div class="scroll-item" id="visibility-container">
+                  <p>Visibility: <span id="visibility"></span> m</p>
+                </div>
+                <div class="scroll-item" id="pressure-container">
+                  <p>Pressure: <span id="pressure"></span> hPa</p>
+                </div>
+                <div class="scroll-item" id="dew-point-container">
+                  <p>Dew Point: <span id="dew_point"></span>°C</p>
+                </div>
+              </div>
+              
+        </div>
+
+        <div class="forecast">
+            <h2>Forecast (Hourly)</h2>
+            <div id="hourly-forecast"></div>
+        </div>
+
+        <div class="forecast">
+            <h2>Forecast (Daily)</h2>
+            <div id="daily-forecast"></div>
+        </div>
+
+        <button id="search-another" onclick="searchAgain()">Another City?</button>
+        <button id="toggle-theme" onclick="toggleTheme()">Dark Mode</button>
+    </div>
+    <script src="result.js"></script>
+</body>
+</html>
