@@ -1,4 +1,4 @@
-AUTHOR-SWASTIK ROY CHOUDHURY
+# AUTHOR-SWASTIK ROY CHOUDHURY
 #### WEBSITE LINK- https://swastik-roy-choudhury.github.io/StratusIQ-SkyCast/
 
 ### Weathoryx: Your Simple Yet Powerful Weather App!
